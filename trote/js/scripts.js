@@ -1,7 +1,7 @@
 function calcular(){
     // vamos criar 2 variáveis
     // JS as variaveis não possuem tipo
-    let mascote, homenagem, leite, kit, suplemento, soma, equipe
+    let mascote, homenagem, leite, kit, suplemento, soma, equipe, sangue
     // recupera o valor do mascote digitado pelo usuário
     mascote = Number(document.getElementById("mascote").value)
     // recupera o valor da homenagem digitado pelo usuário
@@ -29,6 +29,26 @@ function calcular(){
         else if (kit >= 19 && suplemento >= 10){
             soma = soma + 1000 + ((kit-19) * 30) + ((suplemento - 10) * 15)
         }
+        if (sangue >= 97){
+            soma = soma + 2500 + ((sangue - 49) * 20)
+        }
+    else if(equipe == "Preta"){
+        if(sangue >=52){
+            
+        }
+    }
+    else if(equipe == "Roxa"){
+
+    }
+    else if(equipe == "Verde"){
+
+    }
+    else{
+
+    }
+    //doação de sangue
+    sangue = Number(document.getElementById(sangue).value)
+    
     // retorna o valor ao HTML
     // template string
     document.getElementById("soma").innerHTML = `A soma é ${soma}`

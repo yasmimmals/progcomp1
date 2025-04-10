@@ -84,3 +84,10 @@ thead {
 .campos {
     margin-bottom: 20px;
 }
+/* caixa texto */
+.caixabege{
+    background-color: lightgray;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
