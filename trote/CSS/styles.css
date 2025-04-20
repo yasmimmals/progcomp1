@@ -84,3 +84,120 @@ thead {
 .campos {
     margin-bottom: 20px;
 }
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #005BAC;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Navegação */
+nav {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#links-menu {
+    display: flex;
+    gap: 15px;
+}
+
+#links-menu a {
+    text-decoration: none;
+    color: #005BAC;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#links-menu a:hover {
+    background-color: #005BAC;
+    color: white;
+}
+
+nav img {
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Container principal */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #005BAC;
+}
+
+/* Campos do formulário */
+.campos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campos label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campos input,
+.campos select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Botão */
+.campos button {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1.1em;
+    background-color: #005BAC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.campos button:hover {
+    background-color: #003f7d;
+}
+
+/* Resultado */
+#soma {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
