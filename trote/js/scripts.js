@@ -79,4 +79,8 @@ function calcular() {
     }
 
     document.getElementById("soma").innerHTML = `A soma é ${soma}`;
+    // Muda a cor da página conforme a equipe
+document.body.className = ""; // remove outras classes
+document.body.classList.add(equipe); // adiciona a nova
+
 }
