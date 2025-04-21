@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #FFC107;
+    background-color: #ffc107;
     color: white;
     padding: 15px 0px;
     font-size: 24px;
@@ -17,7 +17,7 @@ header {
 }
 
 nav {
-    background: #007BFF;
+    background: #007bff;
     padding: 10px;
     display: flex;
     justify-content: space-between;
