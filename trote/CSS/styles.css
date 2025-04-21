@@ -1,86 +1,159 @@
+/* Animações suaves em todo o site */
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /*-espaçamento externo da página */
-    padding: 0; /*-espaçamento interno da página */
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    text-align: center; /*texto centralizado*/
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
 
-}
 header {
-background-color: #28a745;
-color: white;
-/*15px (espaçamento interno acimo e abaixo) e 0px (direita e esquerda)*/
-padding: 15px 0px;
-font-size: 24px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 0px;
+    font-size: 24px;
+    animation: slideDown 0.6s ease-out;
 }
+
 nav {
     background: #007bff;
-    padding: 10px; /*espaçamento interno do menu */
-    display: flex; /*Plex Boxing */
-    justify-content: space-between; /*espaço entre os elementos do men*/
-    align-items: center; /*alinhamento na vertical */
-}
-#links-menu{
+    padding: 10px;
     display: flex;
-    gap: 15px; /*distancia entre os itens do menu*/
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1.2s ease-in;
 }
-    nav a { /*configura os links do menu*/
-        color: white;
-        text-decoration: none; /*não decora os links*/
-        padding: 10px 15px; /*(10px acima e abaixo) (15 px direita e esquerda*/
-        font-size: 18px;
-        background: #0056b3;
-        border-radius: 5px; /*cantos arredondados*/
-    }
+
+#links-menu {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background: #003d80;
+    transform: scale(1.05);
+}
+
 img {
     width: 120px;
     height: auto;
-    margin-right: 80px; /*espaçamento externo à direita */
+    margin-right: 80px;
     border-radius: 10px;
-
+    transition: transform 0.3s ease;
 }
+
+img:hover {
+    transform: rotate(3deg) scale(1.03);
+}
+
 .container {
-    width: 80%; /*largura de 80% da largura da página */
+    width: 80%;
     background: white;
     border-radius: 10px;
-    /* espaçamento externo 20px acima e abaixo */
-    /* espaçamento externo auto à direita e à esquerda */
     margin: 20px auto;
     padding: 20px;
     text-align: justify;
+    animation: floatIn 0.8s ease;
 }
+
 h2 {
     text-align: center;
+    animation: fadeIn 1.2s ease-in;
 }
-ol li{
+
+ol li {
     padding-bottom: 10px;
+    transition: transform 0.2s;
 }
-table tr td{ 
+
+ol li:hover {
+    transform: translateX(5px);
+}
+
+table tr td {
     padding: 20px;
 }
-table{
-    margin: 0 auto;/*centralizar a a tabela*/
+
+table {
+    margin: 0 auto;
+    animation: fadeIn 1.2s ease-in;
 }
+
+thead {
+    background-color: #0056b3;
+    color: #f4f4f4;
+    animation: fadeIn 1.2s ease-in;
+}
+
 .Laranja {
     background-color: orange;
+    transition: transform 0.3s;
 }
+.Laranja:hover {
+    transform: scale(1.03);
+}
+
 .Preta {
     background-color: black;
     color: white;
+    transition: transform 0.3s;
 }
+.Preta:hover {
+    transform: scale(1.03);
+}
+
 .Roxa {
     background-color: blueviolet;
+    transition: transform 0.3s;
 }
+.Roxa:hover {
+    transform: scale(1.03);
+}
+
 .Verde {
     background-color: green;
+    transition: transform 0.3s;
 }
+.Verde:hover {
+    transform: scale(1.03);
+}
+
 .Vermelha {
     background-color: red;
+    transition: transform 0.3s;
 }
-thead {
-    background-color: #0056b3;
-    color: #f4f4f4
+.Vermelha:hover {
+    transform: scale(1.03);
 }
+
 .campos {
     margin-bottom: 20px;
+    animation: fadeIn 1.4s ease-in;
+}
+
+/* Keyframes de animação */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes floatIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
